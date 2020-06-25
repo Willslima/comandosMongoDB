@@ -1,0 +1,43 @@
+1 Escreva uma consulta do MongoDB para exibir todos os
+documentos de restaurantes da coleção.
+
+-- db.restaurantes.find({})
+
+
+2 Escreva uma consulta do MongoDB para exibir os campos
+restaurant_id, nome, bairro e culinária de todos os documentos no restaurante
+de coleção.
+
+-- db.restaurants.find({},{restaurant_id:1,borough:1,name:1,cuisine:1})
+
+
+3 Escreva uma consulta do MongoDB para exibir os campos
+restaurant_id, nome, bairro e culinária, mas exclua o campo _id para todos os
+documentos na coleção.
+
+-- db.restaurants.find({},{restaurant_id:1,borough:1,name:1,cuisine:1,_id:0})
+
+4 Escreva uma consulta do MongoDB para exibir todo o
+restaurante localizado no bairro Bronx.
+
+-- db.restaurants.find({borough:'Bronx'},{restaurant_id:1,borough:1,name:1,cuisine:1,_id:0})
+
+5 Escreva uma consulta do MongoDB para exibir os 5
+primeiros restaurantes do Bronx.
+
+--
+
+6 Escreva uma consulta do MongoDB para exibir os próximos
+5 restaurantes depois de pular os 5 primeiros que estão no bairro Bronx.
+
+--
+
+7 Escreva uma consulta do MongoDB para encontrar os
+restaurantes que atingiram uma pontuação superior a 90.
+
+--
+
+8 Escreva uma consulta do MongoDB para encontrar os
+restaurantes que atingiram uma pontuação maior que 80, mas menor que 100.
+
+--
